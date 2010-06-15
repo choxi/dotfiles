@@ -1,3 +1,6 @@
+" Pathogen.vim
+call pathogen#runtime_append_all_bundles()
+
 set nocompatible
 set showcmd
 
