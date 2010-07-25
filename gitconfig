@@ -1,36 +1,36 @@
 [user]
-	name = Will Leinweber
-	email = will@bitfission.com
+  name = Roshan Choxi
+  email = roshan.choxi@gmail.com
 [core]
-	excludesfile = /Users/will/.gitignore
-	editor = mate -w
+  excludesfile = /Users/rosh/.gitignore
+  editor = vim
 [color]
-	diff = auto
-	status = auto
-	branch = auto
-	interactive = auto
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
 [color "branch"]
-	current = yellow reverse
-	local = yellow
-	remote = green
+  current = yellow reverse
+  local = yellow
+  remote = green
 [color "diff"]
-	meta = yellow bold
-	frag = magenta bold
-	old = red bold
-	new = green bold
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
 [color "status"]
-	added = yellow
-	changed = green
-	untracked = cyan
+  added = yellow
+  changed = green
+  untracked = cyan
 [alias]
-	ci = commit
-	co = checkout
+  ci = commit
+  co = checkout
   logl = log --pretty=oneline --abbrev-commit --decorate
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %f %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   unadd = update-index --force-remove
 [github]
-	user = will
+  user = choxi
 [branch]
-	autosetupmerge = true
+  autosetupmerge = true
 [apply]
-	whitespace = nowarn
+  whitespace = nowarn
