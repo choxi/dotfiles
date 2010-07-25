@@ -43,6 +43,7 @@ map <leader>t :FuzzyFinderTextMate<CR>
 let g:fuzzy_ignore = "*/log/*;*.swf;*.cache;*.ttf;*.jpg;*.png;*/doc/*;*/etc/*;*/vendor/*;*tmp/*;*/.svn/*;*/public/images/*;*/ufiles/*;*/.git/*;*/script/*"
 
 imap jj <Esc>
+nmap :nerd :NERDTree
 
 vmap D y'>p
 " folding
