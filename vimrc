@@ -56,3 +56,6 @@ au BufNewFile,BufRead *.mxml set filetype=mxml
 au BufNewFile,BufRead *.as set filetype=actionscript
 
 :filetype plugin on
+
+" Save on focus lost
+:au FocusLost * :wa
