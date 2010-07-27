@@ -2,6 +2,7 @@
 
 # add a function path
 fpath=($ZSH/functions $fpath)
+autoload -U $ZSH/functions/*(:t)
 
 # Load all of the config files in ~/oh-my-zsh that end in .zsh
 # TIP: Add files you don't want in git to .gitignore
