@@ -1,12 +1,12 @@
 
-alias ss='thin --stats "/thin/stats" start'
+alias ts='thin --stats "/thin/stats" start'
 alias sg='ruby script/generate'
 alias sd='ruby script/destroy'
 alias sp='ruby script/plugin'
 alias ssp='ruby script/spec'
 alias rdbm='rake db:migrate'
 alias sc='ruby script/console'
-alias sd='ruby script/server --debugger'
+alias ss='ruby script/server'
 alias devlog='tail -f log/development.log'
 
 function _cap_does_task_list_need_generating () {
