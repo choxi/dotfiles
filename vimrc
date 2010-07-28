@@ -44,6 +44,7 @@ let g:fuzzy_ignore = "*/log/*;*.swf;*.cache;*.ttf;*.jpg;*.png;*/doc/*;*/etc/*;*/
 
 imap jj <Esc>
 nmap :nerd :NERDTree
+nmap :rescan :ruby finder.rescan!
 
 vmap D y'>p
 " folding
