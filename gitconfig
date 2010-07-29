@@ -34,3 +34,5 @@
   autosetupmerge = true
 [apply]
   whitespace = nowarn
+[push]
+  default = tracking
