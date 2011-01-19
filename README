@@ -12,10 +12,6 @@ Installation
   rake install
   # edit ~/.gitconfig and personalize it
   
-Install Snippets
-  cd ~/.dotfiles/vim/bundle/snipmate-snippets
-  rake deploy_local
-
 Environment
 
 I am running on Mac OS X, but it will likely work on Linux as well with 
