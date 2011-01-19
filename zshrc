@@ -25,4 +25,4 @@ source $ZSH/oh-my-zsh.sh
 if [[ -s $HOME/.localrc ]] ; then source $HOME/.localrc ; fi
 
 # rvm-install added line:
-if [[ -s /Users/rosh/.rvm/scripts/rvm ]] ; then source /Users/rosh/.rvm/scripts/rvm ; fi  
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && \. "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
