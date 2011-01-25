@@ -61,3 +61,5 @@ au BufNewFile,BufRead *.as set filetype=actionscript
 
 " Save on focus lost
 :au FocusLost * :wa
+
+:set guifont=Monaco:h14
