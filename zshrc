@@ -26,3 +26,5 @@ if [[ -s $HOME/.localrc ]] ; then source $HOME/.localrc ; fi
 
 # rvm-install added line:
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && \. "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+
+export PATH="$PATH:/usr/local/mysql/bin:"
