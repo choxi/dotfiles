@@ -2,7 +2,7 @@
   name = Roshan Choxi
   email = roshan.choxi@gmail.com
 [core]
-  excludesfile = /Users/rosh/.gitignore
+	excludesfile = /Users/roshan/.gitignore
   editor = vim
 [color]
   diff = auto
