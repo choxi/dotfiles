@@ -3,3 +3,4 @@
 --pager=less -R -m -N -X
 --type-set=haml=.haml
 --type-set=sass=.sass
+--type-set=cucumber=.feature
