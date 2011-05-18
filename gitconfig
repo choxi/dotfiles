@@ -2,7 +2,7 @@
   name = Roshan Choxi
   email = roshan.choxi@gmail.com
 [core]
-	excludesfile = /Users/roshan/.gitignore
+  excludesfile = /Users/roshan/.gitignore
   editor = vim
 [color]
   diff = auto
@@ -28,6 +28,10 @@
   logl = log --pretty=oneline --abbrev-commit --decorate
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %f %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   unadd = update-index --force-remove
+  hudson = push -f origin HEAD:test/roshan
+  push-rebase = !sh -c 'branch=$1 && shift && git push "$@" origin HEAD:rebase/$branch/roshan' -
+  push-merge = !sh -c 'branch=$1 && shift && git push "$@" origin HEAD:merge/$branch/roshan' -
+  my-commits = log --author=\"Roshan Choxi\"
 [github]
   user = choxi
 [branch]
