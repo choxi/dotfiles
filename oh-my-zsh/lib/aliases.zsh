@@ -22,5 +22,3 @@ alias ll='ls -l'
 alias sl=ls # often screw this up
 
 alias afind='ack-grep -il'
-
-alias uat-rev='ssh groupon_uat "cat current/REVISION"'
