@@ -2,7 +2,7 @@
 require 'irb/completion'
 require 'irb/ext/save-history'
 require 'rubygems'
-require 'looksee/shortcuts'
+#require 'looksee/shortcuts'
 
 IRB.conf[:SAVE_HISTORY] = 1000
 IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
@@ -40,7 +40,14 @@ def paste
   `pbpaste`
 end
 
-load File.dirname(__FILE__) + '/.railsrc' if $0 == 'irb' && ENV['RAILS_ENV']
+railsrc_path = File.expand_path('~/.railsrc')
+if ( ENV['RAILS_ENV'] || defined? Rails ) && File.exist?( railsrc_path )
+  begin
+    load railsrc_path
+  rescue Exception
+    warn "Could not load: #{ railsrc_path }" # because of $!.message
+  end
+end
 
 # Groupon
 if ENV.include?('RAILS_ENV')
