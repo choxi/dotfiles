@@ -1,6 +1,8 @@
 --ignore-dir=vendor
 --ignore-dir=coverage
+--ignore-dir=tmp
 --pager=less -R -m -N -X
 --type-set=haml=.haml
 --type-set=sass=.sass
 --type-set=cucumber=.feature
+--nocss
