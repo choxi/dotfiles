@@ -26,3 +26,6 @@ alias afind='ack-grep -il'
 # POW shortcuts
 alias log='clear && tail -f log/development.log'
 alias restart='touch tmp/restart.txt'
+
+alias uat-rev='ssh groupon_uat "cat current/REVISION"'
+alias staging-rev='ssh groupon_staging "cat current/REVISION"'
