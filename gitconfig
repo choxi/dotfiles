@@ -40,3 +40,5 @@
   whitespace = nowarn
 [push]
   default = tracking
+[pull]
+  default = tracking
