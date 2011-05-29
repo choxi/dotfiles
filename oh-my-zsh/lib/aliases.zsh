@@ -22,3 +22,7 @@ alias ll='ls -l'
 alias sl=ls # often screw this up
 
 alias afind='ack-grep -il'
+
+# POW shortcuts
+alias log='clear && tail -f log/development.log'
+alias restart='touch tmp/restart.txt'
