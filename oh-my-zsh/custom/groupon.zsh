@@ -9,7 +9,7 @@ function groupoff() {
 }
 
 review-for-sha() {
-    parent=`git show $1 --pretty=%H | awk 'NR==1 {print}'`
+    parent=`git show $1\^ --pretty=%H | awk 'NR==1 {print}'`
     post-review --revision-range $parent:$1
 }
 

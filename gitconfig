@@ -1,5 +1,5 @@
 [user]
-  name = Roshan Choxi
+	name = Roshan Choxi
   email = roshan.choxi@gmail.com
 [core]
   excludesfile = /Users/roshan/.gitignore
@@ -32,6 +32,7 @@
   push-rebase = !sh -c 'branch=$1 && shift && git push "$@" origin HEAD:rebase/$branch/roshan' -
   push-merge = !sh -c 'branch=$1 && shift && git push "$@" origin HEAD:merge/$branch/roshan' -
   my-commits = log --author=\"Roshan Choxi\"
+  squish = rebase -i HEAD~2
 [github]
   user = choxi
 [branch]

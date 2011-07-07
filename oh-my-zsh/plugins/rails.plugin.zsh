@@ -7,6 +7,7 @@ alias ssp='ruby script/spec'
 alias rdbm='rake db:migrate'
 alias sc='ruby script/console'
 alias ss='ruby script/server'
+alias sm='ruby script/multi_server'
 alias devlog='tail -f log/development.log'
 
 function _cap_does_task_list_need_generating () {
