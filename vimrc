@@ -13,8 +13,9 @@ set softtabstop=2
 set shiftwidth=2
 
 " colors
-colorscheme ir_black
-syntax on
+syntax enable
+set background=light
+colorscheme solarized
 
 " search
 set showmatch
@@ -40,6 +41,7 @@ set backspace=indent,eol,start
 
 let mapleader=","
 
+call togglebg#map("<leader>b")
 map <leader>t :FuzzyFinderTextMate<CR>
 let g:fuzzy_ignore = "*/log/*;*.swf;*.cache;*.ttf;*.jpg;*.png;*/doc/*;*/etc/*;*/vendor/*;*tmp/*;*/.svn/*;*/public/images/*;*/ufiles/*;*/.git/*;*/script/*"
 
