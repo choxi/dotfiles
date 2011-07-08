@@ -17,6 +17,12 @@ syntax enable
 set background=light
 colorscheme solarized
 
+" macvim specific
+if has("gui_running")
+    " hide toolbar
+    set guioptions=egmrt
+endif
+
 " search
 set showmatch
 set ignorecase
