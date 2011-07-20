@@ -14,13 +14,14 @@ set shiftwidth=2
 
 " colors
 syntax enable
-set background=light
+set background=dark
 colorscheme solarized
 
 " macvim specific
 if has("gui_running")
     " hide toolbar
-    set guioptions=egmrt
+  set guioptions=egmrt
+  set background=light
 endif
 
 " search
