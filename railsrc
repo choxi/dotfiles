@@ -1,5 +1,5 @@
 #!/usr/bin/ruby
-if Rails.version =~ /^3/
+if defined?(Rails) && Rails.version =~ /^3/
   # Rails prompt
   app_name = Rails.application.class.parent_name.downcase
   app_env  = Rails.env[0...3]
@@ -14,7 +14,7 @@ if Rails.version =~ /^3/
   }
   IRB.conf[:PROMPT_MODE] = :RAILS
 
-# named routes
+  # named routes
   include Rails.application.routes.url_helpers
   default_url_options[:host] = Rails.application.class.parent_name.downcase
 
@@ -43,45 +43,18 @@ else
    warn "Couldn't load Wirble: #{err}"
   end
 
-  if ENV.include?('RAILS_ENV')
-   
-    def show_log
-      change_log(STDOUT)
-    end
-
-    def hide_log
-      change_log(nil)
-    end
-
-    def change_log(stream, colorize=true)
-      require 'activerecord'
-      ActiveRecord::Base.logger = ::Logger.new(stream)
-      ActiveRecord::Base.clear_all_connections!
-      ActiveRecord::Base.colorize_logging = colorize
-    end
-
-    if ENV['INLINE_LOGGING'] && !Object.const_defined?('RAILS_DEFAULT_LOGGER')
-      require 'logger'
-      Object.const_set('RAILS_DEFAULT_LOGGER', Logger.new(STDOUT))
-    end
-
-    def enable_factories
-      require 'factory_girl'
-      Factory.definition_file_paths = [
-        Rails.root.join("test/factories"),
-        Rails.root.join("spec/factories")
-      ]
-      Factory.find_definitions
-    end
-
-    show_log
-
+  def show_log
+    change_log(STDOUT)
   end
 
-  class Object
-    def interest
-      self.methods.sort - Object.methods
-    end
+  def hide_log
+    change_log(nil)
   end
-  
+
+  def change_log(stream, colorize=true)
+    require 'activerecord'
+    ActiveRecord::Base.logger = ::Logger.new(stream)
+    ActiveRecord::Base.clear_all_connections!
+    ActiveRecord::Base.colorize_logging = colorize
+  end
 end
