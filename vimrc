@@ -73,3 +73,6 @@ au BufNewFile,BufRead *.as set filetype=actionscript
 :au FocusLost * :wa
 
 :set guifont=Monaco:h14
+
+" remove trailing whitespace
+map <leader>w :%s/\s\+$//e<CR>
