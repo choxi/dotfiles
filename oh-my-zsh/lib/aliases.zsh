@@ -29,3 +29,4 @@ alias restart='touch tmp/restart.txt'
 
 alias uat-rev='ssh groupon_uat "cat current/REVISION"'
 alias staging-rev='ssh groupon_staging "cat current/REVISION"'
+alias fbapp-rev='ssh tm27-s00187 "cat /data/fbapp/current/REVISION"'

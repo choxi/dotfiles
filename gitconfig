@@ -1,6 +1,6 @@
 [user]
 	name = Roshan Choxi
-  email = roshan.choxi@gmail.com
+	email = roshan@groupon.com
 [core]
   excludesfile = /Users/roshan/.gitignore
   editor = vim
