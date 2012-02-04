@@ -20,6 +20,7 @@ set background=dark
 if &t_Co > 2 || has("gui_running")
   syntax on
   colorscheme hemisu
+  set transparency=5
 endif
 
 " macvim specific
