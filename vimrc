@@ -14,15 +14,20 @@ set shiftwidth=2
 
 " colors
 syntax enable
+
 set background=dark
-colorscheme solarized
+
+if &t_Co > 2 || has("gui_running")
+  syntax on
+  colorscheme hemisu
+endif
 
 " macvim specific
 if has("gui_running")
     " hide toolbar
   set guioptions=egmrt
-  set background=light
 endif
+
 
 " search
 set showmatch
@@ -42,7 +47,6 @@ set list
 set listchars=tab:▸\ ,eol:¬
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a5
-
 
 set backspace=indent,eol,start
 
