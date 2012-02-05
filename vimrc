@@ -20,13 +20,13 @@ set background=dark
 if &t_Co > 2 || has("gui_running")
   syntax on
   colorscheme hemisu
-  set transparency=5
 endif
 
 " macvim specific
 if has("gui_running")
     " hide toolbar
   set guioptions=egmrt
+  set transparency=5
 endif
 
 
