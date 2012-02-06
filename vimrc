@@ -81,3 +81,6 @@ au BufNewFile,BufRead *.as set filetype=actionscript
 
 " remove trailing whitespace
 map <leader>w :%s/\s\+$//e<CR>
+
+" visual bell
+set vb
