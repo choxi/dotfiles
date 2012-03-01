@@ -2,6 +2,7 @@
 --ignore-dir=coverage
 --ignore-dir=tmp
 --ignore-dir=public/assets
+--ignore-dir=.jhw-cache
 --ignore-dir=app/assets/javascripts/libraries
 --pager=less -R -m -N -X
 --type-set=haml=.haml
