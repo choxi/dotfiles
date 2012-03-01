@@ -1,6 +1,11 @@
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
 
+#Homebrew Path
+export PATH=/usr/local/bin:$PATH
+
+[[ -s "/Users/roshan/.rvm/scripts/rvm" ]] && source "/Users/roshan/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # export ZSH_THEME="Soliah"
@@ -20,13 +25,6 @@ export ZSH_THEME="wezm"
 plugins=(git rails osx)
 
 source $ZSH/oh-my-zsh.sh 
-
-# for user specific configurations
-if [[ -s $HOME/.localrc ]] ; then source $HOME/.localrc ; fi
-
-# rvm-install added line:
-unsetopt auto_name_dirs
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && \. "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
 export PATH="$PATH:/usr/local/mysql/bin:"
 export DEPLOYER=roshan
